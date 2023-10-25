@@ -1,0 +1,64 @@
+img
+{
+  width: 100%;
+}
+
+.rowimg
+{
+}
+
+
+h1
+{
+  color: aliceblue;
+  font-weight: bold;
+
+}
+
+
+.contain
+{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+}
+
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  font-weight: 100;
+}
+
+
+
+a
+{
+  background: #e50914;
+   color: #fff;
+margin-right: 5px;
+}
+
+
+a.movie
+{
+background: #0e77e0;
+color: #fff;
+}
+
+
+a:hover
+{
+  background-color:#e50914;
+  color: #fff;
+  border: 1px solid #ffffff;
+
+}
+
+
+a.movie:hover
+{
+  background-color:#0e77e0;
+  color: #fff;
+  border: 1px solid #ffffff;
+}

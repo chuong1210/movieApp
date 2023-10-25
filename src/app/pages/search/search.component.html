@@ -1,0 +1,40 @@
+<div class="container mt-5 p-5 ">
+  <form action="" [formGroup]="searchForm" (ngSubmit)="submitForm()">
+    <div class="row">
+      <label for="examplemovieNam" class="form-label">Enter the name of the movie you want to search for</label>
+
+
+      <div class="mb-4 col-lg-10 ">
+
+
+
+        <input type="text" class="form-control" formControlName="movieName" placeholder="Search Movie Here">
+
+      </div>
+
+        <div class="col-lg-2">
+          <button class="btn btn-sm">Search</button>
+        </div>
+
+
+
+    </div>
+    </form>
+
+    <div class="row mt-5">
+      <div class="col-lg-4" *ngFor="let item of searchResult">
+        <div class="row">
+          <div class="col-lg-3 mt-4 mb-4" *ngIf="item.poster_path" >
+            <img class="rowimg largeposter" src ="https:/image.tmdb.org/t/p/original/{{item.poster_path}}" [routerLink]="['/movie',item.id]" >
+
+          </div>
+
+          <div class="col-lg-9 mt-4 mb-4">
+            <h5>{{item.original_title}}</h5>
+            <p>{{item.overview}}</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
